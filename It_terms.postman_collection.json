@@ -1,0 +1,165 @@
+{
+	"info": {
+		"_postman_id": "0bbeb00e-d986-40c2-8e8a-2e896249021e",
+		"name": "It_terms",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "46841540",
+		"_collection_link": "https://shohzodmardonov.postman.co/workspace/Shohzod-Mardonov's-Workspace~4a52eaec-bfbd-4dae-8e0e-896cddfe891c/collection/46841540-0bbeb00e-d986-40c2-8e8a-2e896249021e?action=share&source=collection_link&creator=46841540"
+	},
+	"item": [
+		{
+			"name": "Author",
+			"item": [
+				{
+					"name": "getAllAuthors",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\":\"Botir Qodirov\",\r\n    \"phone_number\":\"1234567\",\r\n    \"email\":\"botir@mail.uz\",\r\n    \"address\":\"Toshkent\",\r\n    \"location\":\"13245,13245\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/author",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"author"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addAuthor",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Alisher\",\r\n    \"last_name\":\"Qodirov\",\r\n    \"nick_name\":\"aliqod\",\r\n    \"email\":\"alisherqodirov@gmail.com\",\r\n    \"phone\":\"+998938130413\",\r\n    \"password\":\"1304\",\r\n    \"confirm_password\":\"1304\",\r\n    \"info\":\"djbdicbd\",\r\n    \"position\":\"wjbcdkjcnc\",\r\n    \"photo\":\"ececec\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/author",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"author"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "updateAuthor",
+					"request": {
+						"method": "PATCH",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"first_name\":\"Alisher1\",\r\n    \"last_name\":\"Qodirov1\",\r\n    \"nick_name\":\"aliqod\",\r\n    \"email\":\"alisherqodirov@gmail.com\",\r\n    \"phone\":\"+998938130413\",\r\n    \"password\":\"1304\",\r\n    \"confirm_password\":\"1304\",\r\n    \"info\":\"djbdicbd\",\r\n    \"position\":\"wjbcdkjcnc\",\r\n    \"photo\":\"ececec\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/author/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"author",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteAuthor",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\":\"Ali Qodirov\",\r\n    \"phone_number\":\"1234567\",\r\n    \"email\":\"Ali@mail.uz\",\r\n    \"address\":\"Toshkent\",\r\n    \"location\":\"13245,13245\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/author/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"author",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "oneAuthor",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"full_name\":\"Ali Qodirov\",\r\n    \"phone_number\":\"1234567\",\r\n    \"email\":\"Ali@mail.uz\",\r\n    \"address\":\"Toshkent\",\r\n    \"location\":\"13245,13245\"\r\n}\r\n",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:3000/api/author/1",
+							"host": [
+								"localhost"
+							],
+							"port": "3000",
+							"path": [
+								"api",
+								"author",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
